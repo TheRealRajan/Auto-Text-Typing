@@ -24,7 +24,7 @@ speeedEl.addEventListener('input', (e)=>{
         e.target.value = 5
     }
     speed =  300 / e.target.value
-    console.log(speed)
+    // console.log(speed)
 })
 
 changeText.addEventListener('input', (e)=> {
