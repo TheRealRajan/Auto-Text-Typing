@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #001427;
+  color: #fff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.changeText {
+  margin-top: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.6rem 1rem;
+  border-radius: 1000px;
+  border: none;
+  color: rgb(139, 139, 139);
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: inherit;
+  width: 20rem;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+.main {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 600px;
+  padding: 0.3rem 0.5rem 0.3rem 1rem;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.08);
+}
+
+.text {
+  margin: 1rem 2rem;
+  line-height: 1.4;
+}
+
+.speed {
+  width: 2.4rem;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+
+@media (orientation: portrait) {
+  .changeText {
+    width: 90%;
+  }
+  .text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+}
