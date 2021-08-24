@@ -23,8 +23,11 @@ speeedEl.addEventListener('input', (e)=>{
     if(e.target.value>5){
         e.target.value = 5
     }
-    speed =  300 / e.target.value
-    // console.log(speed)
+    speed = 300/ e.target.value
+    //When user is trying to input speed value and the input remains empty the speed value is set to one which resets the time to default of 300ms and prevents the speed value to become Infinity 
+    if(speed==Infinity){
+        speed = 300
+    }
 })
 
 changeText.addEventListener('input', (e)=> {
